@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantryPal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PantryPal</h1>
+        <div class="slogan">Meals made easy, right from your pantry</div>
+        
+        <!-- Pantry Checklist Button -->
+        <button onclick="togglePantryChecklist()" class="pantry-button">Set Up Your Pantry</button>
+        
+        <!-- Pantry Modal -->
+        <div id="pantryModal" class="modal">
+            <div class="modal-content">
+                <h2>Select Your Pantry Items</h2>
+                <p>Check the items you have in your pantry:</p>
+                <div class="pantry-grid" id="pantryChecklist">
+                    <!-- Checkboxes will be added here by JavaScript -->
+                </div>
+                <button onclick="savePantrySelections()" class="save-button">Save Selections</button>
+            </div>
+        </div>
+
+        <div class="ingredient-input">
+            <input type="text" id="ingredientInput" placeholder="Enter an ingredient" autofocus>
+            <button onclick="addIngredient()">Add Ingredient</button>
+        </div>
+        <div id="ingredientList" class="ingredient-list">
+            <!-- Ingredients will be listed here -->
+        </div>
+        <button onclick="searchRecipes()" class="search-button">Find Recipes</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
